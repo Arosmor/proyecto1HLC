@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Proyecto Tema 1 Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div class="ion-padding"> 
+  <ion-input type="number" [(ngModel)]="num1" placeholder="Introduzca un Valor Numerico">
+  </ion-input>
+  <ion-input type="number" [(ngModel)]="num2" placeholder="Introduzca otro Valor Numerico">
+  </ion-input>
+
+  <ion-card *ngIf="resultado >= 0">
+    <ion-card-header>
+      El resultado de la operacion es {{ resultado }}
+    </ion-card-header>
+  </ion-card>
+
+  <ion-button  (click)="suma()">Sumar</ion-button>
+  <ion-button  (click)="resta()">Restar</ion-button>
+  <ion-button  (click)="multiplicacion()">Multiplicar</ion-button>
+  <ion-button  (click)="division()">Division</ion-button>
+  <ion-button  (click)="exponente()">Exponente</ion-button>
+  <ion-button  (click)="reinicia()">Reiniciar los valores</ion-button>
+</div>
+</ion-content>
