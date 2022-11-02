@@ -44,6 +44,7 @@ ion-content {
 @media screen and (max-width: 600px) {
   ion-content {
     --background: rgb(236, 146, 230);
+    // Elimina el boton exponente
     .button1 {
       display: none;
     }
