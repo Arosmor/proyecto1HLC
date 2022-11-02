@@ -29,12 +29,14 @@
 /* Set the background color of body to tan */
 ion-content {
   --background: rgb(255, 184, 180);
+  
 }
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
   ion-content {
     --background: rgb(171, 244, 234);
+    
   }
 }
 
@@ -42,5 +44,9 @@ ion-content {
 @media screen and (max-width: 600px) {
   ion-content {
     --background: rgb(236, 146, 230);
+    .button1 {
+      display: none;
+    }
   }
 }
+
